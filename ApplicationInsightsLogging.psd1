@@ -12,7 +12,7 @@
 # RootModule = ''
 
 # Version number of this module.
-ModuleVersion = '0.4'
+ModuleVersion = '0.5'
 
 # ID used to uniquely identify this module
 GUID = 'a32d2c5e-1d7d-432e-911c-fd69831580ae'
@@ -76,7 +76,10 @@ NestedModules =  @('ApplicationInsightsLogging.psm1')
 # Functions to export from this module
 FunctionsToExport = @('Connect-ApplicationInsights', 
         'Disconnect-ApplicationInsights', 
-        'Get-ApplicationInsightsTelemetryClient', 
+        'Get-ApplicationInsightsTelemetryClient',
+		'Send-ApplicationInsightsData',
+		'Get-ApplicationInsightsPropertiesDictionary',
+		'Get-ApplicationInsightsMetricsDictionary',
         'Set-ApplicationInsightsOperationId', 
         'Set-ApplicationInsightsOperationName', 
         'Set-ApplicationInsightsComponentVersion',
